@@ -1,0 +1,43 @@
+$mansalva: 'Mansalva', cursive;
+$defaultBack: #212121;
+$fontColor: #afc67b;
+$pcolor: #e8e8e8;
+$defaultBack2: #45493b;
+//VARIABLES ^^^
+
+section.info-3 {
+  width: 100%;
+  padding: 110px 0 90px 0;
+  background-color: $defaultBack2;
+
+  h3 {
+    color: $fontColor;
+    font-size: 42px;
+    font-family: $mansalva;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  p {
+    color: $pcolor;
+    text-align: center;
+    font-size: 21px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .beens {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.info-3 {
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      width: 80%;
+    }
+  }
+}
