@@ -15,8 +15,19 @@ function clickBurger() {
     burger.classList.add('burger-active');
   }
 }
+
+let lastScroll = Math.round(window.scrollY);
+const hideNav = throttle(() => {
+  var scroll = Math.round(window.scrollY);
+  var active = burger.classList.value == "burger burger-active";
+  if (scroll > lastScroll && active) {
+    burger.classList.remove('burger-active');
+    nav.classList.remove('nav-active');
+  }
+})
 //BURGER FUNCTIONS ^^^
 
 window.addEventListener('load', () => {
   burgerWrapper.addEventListener('click', clickBurger);
-})
+});
+window.addEventListener('scroll', hideNav);

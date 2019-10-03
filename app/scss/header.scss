@@ -196,3 +196,18 @@ header {
     }
   }
 }
+@media screen and (max-height: 800px) {
+  header {
+    .header-right-block {
+      .logo {
+        margin-bottom: 40px;
+      }
+      h1 {
+        margin-bottom: 30px;
+      }
+      button.learn-more-btn {
+
+      }
+    }
+  }
+}
