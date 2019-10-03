@@ -1,0 +1,16 @@
+$mansalva: 'Mansalva', cursive;
+$defaultBack: #212121;
+$fontColor: #afc67b;
+$pcolor: #e8e8e8;
+$defaultBack2: #45493b;
+//VARIABLES ^^^
+
+section.wallpaper {
+  width: 100%;
+  height: 864px;
+  background-color: $defaultBack;
+  background-image: url("../images/formBack.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

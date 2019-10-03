@@ -1,0 +1,70 @@
+$mansalva: 'Mansalva', cursive;
+$defaultBack: #212121;
+$fontColor: #afc67b;
+$pcolor: #e8e8e8;
+$defaultBack2: #45493b;
+$pBlack: #555555;
+//VARIABLES ^^^
+
+section.info-4 {
+  width: 100%;
+  background-color: $defaultBack;
+  padding: 50px 0;
+
+  img.quotes {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  p.info-4-text {
+    font-size: 19px;
+    color: $fontColor;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+  p.info-4-title {
+    font-size: 29px;
+    color: $fontColor;
+    font-family: $mansalva;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  .info-4-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.info-4 {
+    p.info-4-text {
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  section.info-4 {
+    p.info-4-text {
+      width: 90%;
+    }
+    .info-4-icons {
+      a {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

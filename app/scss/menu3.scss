@@ -1,0 +1,108 @@
+$mansalva: 'Mansalva', cursive;
+$defaultBack: #212121;
+$fontColor: #afc67b;
+$pcolor: #e8e8e8;
+$defaultBack2: #45493b;
+$pBlack: #555555;
+//VARIABLES ^^^
+
+section.menu-3 {
+  width: 100%;
+  padding: 45px 0 60px 0;
+  background-color: $defaultBack2;
+
+  h2 {
+    font-size: 77px;
+    text-align: center;
+    font-family: $mansalva;
+    color: $fontColor;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: $pcolor;
+    margin-bottom: 55px;
+  }
+  .menu-3-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .menu-3-item {
+      width: 340px;
+      height: 500px;
+      background-color: #e7e7e7;
+      margin: 0 20px;
+      margin-bottom: 50px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+      }
+      p.menu-3-item-small {
+        color: $pBlack;
+        font-size: 14px;
+        margin-bottom: 23px;
+        margin-left: 20px;
+      }
+      p.menu-3-item-title {
+        font-size: 17px;
+        font-weight: bold;
+        color: $pBlack;
+        margin-bottom: 7px;
+        margin-left: 20px;
+      }
+      p.menu-3-item-text {
+        width: 80%;
+        font-size: 17px;
+        color: #4f4e4e;
+        margin-bottom: 25px;
+        margin-left: 20px;
+      }
+      a.menu-3-item-link {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $pBlack;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        margin-left: 20px;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 7px;
+          background-color: $fontColor;
+          left: 0;
+          bottom: -12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  section.menu-3 {
+    h2 {
+      font-size: 70px;
+    }
+    h3 {
+      font-size: 32px
+    }
+    .menu-3-items {
+      .menu-3-item {
+        width: 310px;
+        height: 550px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
