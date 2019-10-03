@@ -1,0 +1,119 @@
+$mansalva: 'Mansalva', cursive;
+$defaultBack: #212121;
+$fontColor: #afc67b;
+$pcolor: #e8e8e8;
+$defaultBack2: #45493b;
+//VARIABLES ^^^
+
+section.book {
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  background-color: $defaultBack;
+
+  .container {
+    h2 {
+      font-size: 77px;
+      font-family: $mansalva;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 65px;
+
+      .input-wrapper {
+        width: 240px;
+        margin: 35px 70px;
+
+        label {
+          color: #fff;
+          font-size: 17px;
+          font-weight: bold;
+        }
+        input {
+          width: 100%;
+          height: 32px;
+          margin-top: 10px;
+          border: 2px solid #fff;
+          border-radius: 8px;
+          background-color: $defaultBack;
+          padding: 8px;
+          font-size: 17px;
+          color: #fff;
+        }
+        input[type="date"] {
+          background-image: url("../images/calendar.png");
+          background-position: 97% 50%;
+          background-repeat: no-repeat;
+        }
+        input[type="time"] {
+          background-image: url("../images/time.png");
+          background-position: 97% 50%;
+          background-repeat: no-repeat;
+        }
+        input[type="date"]::-webkit-inner-spin-button {
+          display: none;
+        }
+        input[type="time"]::-webkit-inner-spin-button {
+          display: none;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          opacity: 0;
+        }
+        input::-webkit-input-placeholder {color: #fff};
+        input::-moz-placeholder {color: #fff};
+        input:-moz-placeholder {color: #fff};
+        input:-ms-input-placeholder {color: #fff};
+      }
+    }
+    button.submitBtn {
+      width: 240px;
+      height: 32px;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 32px;
+      cursor: pointer;
+      background-color: $defaultBack;
+      display: block;
+      margin: 0 auto;
+
+    }
+  }
+}
+@media screen and (max-width: 1155px) {
+  section.book {
+    .container {
+      form {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 775px) {
+  section.book {
+    .container {
+      h2 {
+        font-size: 70px;
+      }
+      form {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .input-wrapper {
+          margin: 35px 0;
+        }
+      }
+    }
+  }
+}
