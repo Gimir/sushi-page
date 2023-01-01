@@ -23,8 +23,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "bugs": {
     "url": "https://github.com/Gimir/sushi-page/issues"
